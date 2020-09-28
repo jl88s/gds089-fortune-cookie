@@ -1,0 +1,169 @@
+:root {
+    --main-black: #070707;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* html {
+    background-color: var(--main-black);
+} */
+
+body {
+    background-color: #fcf9ef;
+    color: var(--main-black);
+    font-family: 'Open Sans', sans-serif;
+    /* border: 1.5em solid var(--main-black); */
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 7rem;
+    line-height: 110px;
+    display: inline-block;
+}
+
+.btn {
+    background-color: #FCF7ED;
+    border: 3px solid var(--main-black);
+    color: var(--main-black);
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px 44px;
+    text-align: center;
+    text-decoration: none;
+    font-size: .9rem;
+    margin: 3em 0 0 0;
+    text-transform: uppercase;
+    transition: ease-in-out .25s;
+    letter-spacing: 1px;
+    width: 200px;
+  }
+
+  .btn:hover {
+    background-color: var(--main-black);
+    color: #FCF7ED;
+  }
+
+  p {
+      width: 400px;
+      line-height: 1.5;
+      margin: 2em 0 0 0;
+      display: inline-block;
+  }
+
+  #container {
+    display: flex;
+    height: 92vh;
+    width: 100%;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50vw;
+  }
+
+  .left {
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 5em;
+  }
+
+  #teller-gif {
+      width: 85%;
+      display: inline-block;
+      margin-top: 3em;
+  }
+
+  #paper {
+      width: 400px;
+      height: 55px;
+      background-color: rgba(253, 253, 253, 0.979);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color: var(--main-black);
+      border: .5px solid var(--main-black);
+  }
+
+  #paper::before {
+      width: 50px;
+      height: 3px;
+      background-color: var(--main-black);
+      position: absolute;
+      content: " ";
+      top: 0;
+      left: 0;
+  }
+
+  #paper::after {
+    width: 50px;
+    height: 10px;
+    background-color: var(--main-black);
+    position: absolute;
+    content: " ";
+    bottom: 0;
+    left: 0;
+}
+
+  @media (max-width: 1002px) {
+    h1 {
+        font-size: 5.5rem;
+        line-height: 100px;
+    }    
+
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+        margin: 5em auto;
+      }
+    
+      .right {
+          margin-bottom: 3em;
+      }
+
+    #paper {
+        width: 400px;
+        margin: 3em 0;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        line-height: 90px;
+    }   
+
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .left {
+        margin-top: 0em;
+    }
+
+    .btn {
+        margin: 2em 0 0 0;
+    }
+
+    #teller-gif {
+        width: 350px;
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    p {
+    margin: .5em 0 0 0;
+    }
+}
